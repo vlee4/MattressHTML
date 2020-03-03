@@ -1,5 +1,8 @@
 body{
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(245, 241, 237);
 }
 #pageTitle{
     text-align: center;
@@ -8,7 +11,7 @@ body{
 .mattressContainer{
     display: flex;
     box-sizing:border-box;
-    
+   align-items: flex-end;
 
 }
 .productBox{
@@ -19,8 +22,8 @@ body{
     box-sizing:border-box;
     color: gray;
     font-family: sans-serif;
-    justify-content: center;
-    border: solid;
+   
+    
 }
 #casper{
 
@@ -49,4 +52,33 @@ body{
 .shopButton{
     height: 5rem;
     width: 7.5rem;
+}
+
+.otherProductContainer{
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.bedItems{
+    display:flex;
+    border: solid;
+}
+#boxPillow,#boxSheets,#boxBase{
+    display:flex;
+    flex-direction:column;
+
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 1;
+    width:50%;
+    background-color: whitesmoke;
+    margin: 10px;
+}
+#boxSheets{
+    margin: 10px;
+}
+#seeAllPdts{
+    height: 2.5rem;
+    width: 9rem;
 }
